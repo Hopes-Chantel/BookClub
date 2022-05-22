@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 const bcrypt = require('bcrypt');
-
+const {ObjectId} = mongoose.Schema.Types
 
 const bookSchema = require('./Book');
 
@@ -10,7 +10,7 @@ const userSchema = new mongoose.Schema({
   password: String,
   photoUrl: String, 
   bio: String,
-  savedBooks: [bookSchema],
+  
 }, {
   timestamps: true
 });

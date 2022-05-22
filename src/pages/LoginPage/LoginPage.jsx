@@ -52,7 +52,9 @@ export default function LoginPage(props) {
       >
         <Grid.Column style={{ maxWidth: 450 }}>
           <Header as="h2" color="teal" textAlign="center">
-            <Image src="https://i.ibb.co/DwbJDYB/logo-size.jpg" /> Log-in Booklover
+            <Image src="https://i.ibb.co/DwbJDYB/logo-size.jpg" alt= "header" width="200px" />  <Segment stacked>I don't see how you can hate from outside of the club, you can't even get in.
+            </Segment>
+            
           </Header>
           <Form autoComplete="off" onSubmit={handleSubmit}>
             <Segment stacked>
