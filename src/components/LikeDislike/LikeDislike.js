@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Tooltip} from 'antd';
 import Axios from 'axios';
-import Icon from '@ant-design/icons'
+import {  HeartTwoTone, FrownOutlined }  from '@ant-design/icons'
 
 
 function LikeDislikes(props) {
@@ -151,7 +151,7 @@ function LikeDislikes(props) {
         <React.Fragment>
             <span key="comment-basic-like">
                 <Tooltip title="Like">
-                <Icon type="smile"
+                <HeartTwoTone twoToneColor="#eb2f96" 
                         theme={LikeAction === 'liked' ? 'filled' : 'outlined'}
                         onClick={onLike} />
                 </Tooltip>
@@ -159,7 +159,7 @@ function LikeDislikes(props) {
             </span>&nbsp;&nbsp;
             <span key="comment-basic-dislike">
                 <Tooltip title="Dislike">
-                <Icon type="smile"
+                <FrownOutlined twoToneColor="#52c41a"
                         theme={DislikeAction === 'disliked' ? 'filled' : 'outlined'}
                         onClick={onDisLike}
                     />
