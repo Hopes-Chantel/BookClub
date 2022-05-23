@@ -30,7 +30,6 @@ class Books extends Component{
 }
 
 handleSearch=(e) => {
-    console.log(e.target.value)
     this.setState({searchArea: e.target.value})
     //sets state to whatever we are typing in the input box
 

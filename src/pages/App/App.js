@@ -7,6 +7,7 @@ import LoginPage from '../LoginPage/LoginPage';
 import userService from '../../utils/userService';
 import Books from '../../components/Books/Books';
 import ProfilePage from '../ProfilePage/ProfilePage';
+import Favorites from '../Favorites/Favorites';
 
 
 
@@ -37,6 +38,8 @@ function App() {
            />
             <Route path="/:username" element={<ProfilePage user={user} handleLogout={handleLogout}  />}
              />
+             <Route path="/favorites" element={<Favorites/>} 
+           />
       </Routes>
   );
 }

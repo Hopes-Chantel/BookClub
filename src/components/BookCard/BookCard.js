@@ -1,9 +1,8 @@
 import React, { useState} from 'react';
-import { Icon } from "semantic-ui-react";
 import { Card, CardImg, CardBody, Button, Modal} from 'reactstrap';
 import LikeDislikes from "../LikeDislike/LikeDislike";
-import {useParams} from 'react-router-dom';
 import {List} from 'antd';
+import Favorite from '../Favorite/Favorite';
 
 
 
@@ -13,13 +12,14 @@ import {List} from 'antd';
 
 const BookCard = (props) => {
   const { volumeInfo } = props.info;
+  const  bookId  = props.info.id
   const {title, authors, description, pageCount, previewLink } = props.info.volumeInfo;
   const thumbNail = volumeInfo.hasOwnProperty('imageLinks') == false ? "https://vignette.wikia.nocookie.net/pandorahearts/images/a/ad/Not_available.jpg/revision/latest?cb=20141028171337" : volumeInfo.imageLinks.thumbnail;
   
-
+  const [Book, setBook] = useState([])
   const [modal, setModal] = useState(false);
   const toggle = () => setModal(!modal);
-
+console.log(bookId)
   return (
     <Card style={{ width: '233px' }} className='m-auto '>
       <CardImg
@@ -32,10 +32,10 @@ const BookCard = (props) => {
         <h3>{title}</h3>
         <p>{authors}</p>
         <Button onClick={toggle}>Book Details</Button>
+        <Favorite userFrom={localStorage.getItem('userId')} bookId={bookId} bookInfo={Book} />
         <List.Item
-        actions={[<LikeDislikes book bookId={localStorage.getItem('bookId')} userId={localStorage.getItem('userId')} />]} />
+        actions={[<LikeDislikes bookId={props.info.id} userId={localStorage.getItem('userId')} />]} />
       </CardBody>
-    
       <Modal isOpen={modal} toggle={toggle}>
         <div className='modal-header d-flex justify-content-center'>
           <h5 className='modal-title text-center' id='exampleModalLabel'>

@@ -5,28 +5,22 @@ import {  HeartTwoTone, FrownOutlined }  from '@ant-design/icons'
 
 
 function LikeDislikes(props) {
-
     const [Likes, setLikes] = useState(0)
     const [Dislikes, setDislikes] = useState(0)
     const [LikeAction, setLikeAction] = useState(null)
     const [DislikeAction, setDislikeAction] = useState(null)
+   
     let variable = {};
-
-    if (props.book) {
-        variable = { bookId: props.bookId, userId: props.userId }
-    } else {
-        
-    }
-
-
+    
     useEffect(() => {
 
         Axios.post('/api/like/getLikes', variable)
             .then(response => {
                 console.log('getLikes',response.data)
-
+        
+               
                 if (response.data.success) {
-                    //How many likes does this video or comment have ????
+                    //How many likes does this book have ????
                     setLikes(response.data.likes.length)
 
                     //Has the user already clicked this like button or not 
@@ -45,7 +39,7 @@ function LikeDislikes(props) {
             .then(response => {
                 console.log('getDislike',response.data)
                 if (response.data.success) {
-                    //How many likes does this video or comment have 
+                    //How many likes does this  have 
                     setDislikes(response.data.dislikes.length)
 
                     //if I already click this like button or not 

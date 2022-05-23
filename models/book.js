@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 const { Schema } = require('mongoose');
-const {ObjectId} = mongoose.Schema.Types
+
 
 
 const bookSchema = new Schema({
@@ -28,11 +28,6 @@ const bookSchema = new Schema({
     type: String,
     required: true,
   },
-  likes:[{type:ObjectId,ref:"User"}],
-  comments:[{
-      text:String,
-      postedBy:{type:ObjectId,ref:"User"}
-  }],
 });
 
 module.exports = mongoose.model('Book', bookSchema);

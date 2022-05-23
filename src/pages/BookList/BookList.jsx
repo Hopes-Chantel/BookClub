@@ -1,10 +1,11 @@
 import React from 'react';
 import BookCard from '../../components/BookCard/BookCard';
-import * as likesAPI from '../../utils/likeApi';
 
 
 
-const BookList =(props,addLike, removeLike ) =>{
+
+
+const BookList =(props ) =>{
 
  return(
     <div className="list">
