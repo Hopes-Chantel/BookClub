@@ -32,7 +32,7 @@ function LikeDislikes(props) {
                     //Has the user already clicked this like button or not 
                     response.data.likes.map(like => {
                         if (like.userId === props.userId) {
-                            //grabbing the UserId 
+                            //if the person who liked it is the user currently logged in it will show as liked 
                             setLikeAction('liked')
                         }
                     })
