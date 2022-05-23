@@ -33,7 +33,7 @@ const BookCard = (props) => {
         <p>{authors}</p>
         <Button onClick={toggle}>Book Details</Button>
         <List.Item
-        actions={[<LikeDislikes  bookId={localStorage.getItem('bookId')} userId={localStorage.getItem('userId')} />]} />
+        actions={[<LikeDislikes book bookId={localStorage.getItem('bookId')} userId={localStorage.getItem('userId')} />]} />
       </CardBody>
     
       <Modal isOpen={modal} toggle={toggle}>

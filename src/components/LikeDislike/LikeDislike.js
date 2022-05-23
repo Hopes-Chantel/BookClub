@@ -15,7 +15,7 @@ function LikeDislikes(props) {
     if (props.book) {
         variable = { bookId: props.bookId, userId: props.userId }
     } else {
-        variable = { commentId: props.commentId, userId: props.userId }
+        
     }
 
 
@@ -26,12 +26,13 @@ function LikeDislikes(props) {
                 console.log('getLikes',response.data)
 
                 if (response.data.success) {
-                    //How many likes does this video or comment have 
+                    //How many likes does this video or comment have ????
                     setLikes(response.data.likes.length)
 
-                    //if I already click this like button or not 
+                    //Has the user already clicked this like button or not 
                     response.data.likes.map(like => {
                         if (like.userId === props.userId) {
+                            //grabbing the UserId 
                             setLikeAction('liked')
                         }
                     })
@@ -117,7 +118,7 @@ function LikeDislikes(props) {
                         setDislikeAction(null)
 
                     } else {
-                        alert('Failed to decrease dislike')
+                        alert('Failed  dislike')
                     }
                 })
 
@@ -150,7 +151,7 @@ function LikeDislikes(props) {
     return (
         <React.Fragment>
             <span key="comment-basic-like">
-                <Tooltip title="Like">
+                <Tooltip title="Love">
                 <HeartTwoTone twoToneColor="#eb2f96" 
                         theme={LikeAction === 'liked' ? 'filled' : 'outlined'}
                         onClick={onLike} />
@@ -158,7 +159,7 @@ function LikeDislikes(props) {
                 <span style={{ paddingLeft: '8px', cursor: 'auto' }}>{Likes}</span>
             </span>&nbsp;&nbsp;
             <span key="comment-basic-dislike">
-                <Tooltip title="Dislike">
+                <Tooltip title="Not Impressed">
                 <FrownOutlined twoToneColor="#52c41a"
                         theme={DislikeAction === 'disliked' ? 'filled' : 'outlined'}
                         onClick={onDisLike}
