@@ -9,8 +9,7 @@ function LikeDislikes(props) {
     const [Dislikes, setDislikes] = useState(0)
     const [LikeAction, setLikeAction] = useState(null)
     const [DislikeAction, setDislikeAction] = useState(null)
-   
-    let variable = {};
+    const variable = { bookId: props.bookId, userId: props.userId }
     
     useEffect(() => {
 
@@ -22,6 +21,7 @@ function LikeDislikes(props) {
                 if (response.data.success) {
                     //How many likes does this book have ????
                     setLikes(response.data.likes.length)
+                   
 
                     //Has the user already clicked this like button or not 
                     response.data.likes.map(like => {

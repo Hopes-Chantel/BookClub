@@ -1,23 +1,21 @@
 import React, { useState} from 'react';
-import { Card, CardImg, CardBody, Button, Modal} from 'reactstrap';
+import {Card, CardImg, CardBody, Button, Modal, } from 'reactstrap';
+import {Icon, Image} from "semantic-ui-react";
 import LikeDislikes from "../LikeDislike/LikeDislike";
 import {List} from 'antd';
-import Favorite from '../Favorite/Favorite';
-
-
-
-
-
 
 
 const BookCard = (props) => {
+  
   const { volumeInfo } = props.info;
-  const  bookId  = props.info.id
+  const bookRating = volumeInfo.averageRating
+  const  bookId  = props.info.id;
   const {title, authors, description, pageCount, previewLink } = props.info.volumeInfo;
   const thumbNail = volumeInfo.hasOwnProperty('imageLinks') == false ? "https://vignette.wikia.nocookie.net/pandorahearts/images/a/ad/Not_available.jpg/revision/latest?cb=20141028171337" : volumeInfo.imageLinks.thumbnail;
   
   const [Book, setBook] = useState([])
   const [modal, setModal] = useState(false);
+  
   const toggle = () => setModal(!modal);
 console.log(bookId)
   return (
@@ -31,8 +29,11 @@ console.log(bookId)
       <CardBody>
         <h3>{title}</h3>
         <p>{authors}</p>
+        {/* <Card.Content extra textAlign={"center"}>
+                <Icon name={"heart"} size="large" color={liked} onClick={clickHandler} />
+                Add To Favorites
+            </Card.Content> */}
         <Button onClick={toggle}>Book Details</Button>
-        <Favorite userFrom={localStorage.getItem('userId')} bookId={bookId} bookInfo={Book} />
         <List.Item
         actions={[<LikeDislikes bookId={props.info.id} userId={localStorage.getItem('userId')} />]} />
       </CardBody>
@@ -56,7 +57,7 @@ console.log(bookId)
             <div>
               <p>Pages: {pageCount}</p>
               <p>Author(s) : {authors}</p>
-              <p>Rating:</p>
+              <p> Rating: {bookRating}</p>
             </div>
           </div>
           <div className='mt-3'>{description}</div>
