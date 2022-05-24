@@ -6,12 +6,8 @@ const { Dislike } = require("../models/Dislike");
 
 router.post("/getLikes", (req, res) => {
 
-    let variable = {}
-    if (req.body.bookId) {
-        variable = { bookId: req.body.bookId }
-    } else {
-        variable = { commentId: req.body.commentId }
-    }
+    let variable = { bookId: req.body.bookId, userId: req.body.userId }
+  
 
     Like.find(variable)
         .exec((err, likes) => {
@@ -22,15 +18,10 @@ router.post("/getLikes", (req, res) => {
 
 })
 
-
 router.post("/getDislikes", (req, res) => {
 
-    let variable = {}
-    if (req.body.bookId) {
-        variable = { bookId: req.body.bookId }
-    } else {
-        variable = { commentId: req.body.commentId }
-    }
+    let variable = { bookId: req.body.bookId, userId: req.body.userId }
+    
 
     Dislike.find(variable)
         .exec((err, dislikes) => {
@@ -43,12 +34,8 @@ router.post("/getDislikes", (req, res) => {
 
 router.post("/upLike", (req, res) => {
 
-    let variable = {}
-    if (req.body.bookId) {
-        variable = { bookId: req.body.bookId, userId: req.body.bookId }
-    } else {
-        variable = { commentId: req.body.commentId , bookId: req.body.bookId }
-    }
+    let variable = { bookId: req.body.bookId, userId: req.body.userId }
+    
 
     const like = new Like(variable)
     //save the like information data in MongoDB
@@ -69,12 +56,8 @@ router.post("/upLike", (req, res) => {
 
 router.post("/unLike", (req, res) => {
 
-    let variable = {}
-    if (req.body.bookId) {
-        variable = { bookId: req.body.bookId, userId: req.body.userId }
-    } else {
-        variable = { commentId: req.body.commentId , userId: req.body.userId }
-    }
+    let variable = { bookId: req.body.bookId, userId: req.body.userId }
+
 
     Like.findOneAndDelete(variable)
         .exec((err, result) => {
@@ -87,12 +70,7 @@ router.post("/unLike", (req, res) => {
 
 router.post("/unDisLike", (req, res) => {
 
-    let variable = {}
-    if (req.body.bookId) {
-        variable = { bookId: req.body.bookId, userId: req.body.userId }
-    } else {
-        variable = { commentId: req.body.commentId , userId: req.body.userId }
-    }
+    let variable = { bookId: req.body.bookId, userId: req.body.userId }
 
     Dislike.findOneAndDelete(variable)
     .exec((err, result) => {
@@ -107,12 +85,7 @@ router.post("/unDisLike", (req, res) => {
 
 router.post("/upDisLike", (req, res) => {
 
-    let variable = {}
-    if (req.body.bookId) {
-        variable = { bookId: req.body.bookId, userId: req.body.userId }
-    } else {
-        variable = { commentId: req.body.commentId , userId: req.body.userId }
-    }
+    let variable = { bookId: req.body.bookId, userId: req.body.userId }
 
     const disLike = new Dislike(variable)
     //save the like information data in MongoDB

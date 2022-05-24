@@ -13,7 +13,6 @@ const BookCard = (props) => {
   const {title, authors, description, pageCount, previewLink } = props.info.volumeInfo;
   const thumbNail = volumeInfo.hasOwnProperty('imageLinks') == false ? "https://vignette.wikia.nocookie.net/pandorahearts/images/a/ad/Not_available.jpg/revision/latest?cb=20141028171337" : volumeInfo.imageLinks.thumbnail;
   
-  const [Book, setBook] = useState([])
   const [modal, setModal] = useState(false);
   
   const toggle = () => setModal(!modal);
