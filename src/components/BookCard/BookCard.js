@@ -57,6 +57,9 @@ console.log(bookId)
               <p>Pages: {pageCount}</p>
               <p>Author(s) : {authors}</p>
               <p> Rating: {bookRating}</p>
+              <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
+          
+                </div>
             </div>
           </div>
           <div className='mt-3'>{description}</div>

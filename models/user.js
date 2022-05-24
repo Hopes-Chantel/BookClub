@@ -2,7 +2,6 @@ const mongoose = require('mongoose');
 const bcrypt = require('bcrypt');
 const {ObjectId} = mongoose.Schema.Types
 
-const bookSchema = require('./Book');
 
 const userSchema = new mongoose.Schema({
   username: {type: String, required: true, lowercase: true, unique: true},
