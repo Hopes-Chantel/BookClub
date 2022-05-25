@@ -13,6 +13,8 @@ export default function Header({ user, handleLogout }) {
 <Link className="btn btn-warning" to="" onClick={handleLogout}>
           Logout
         </Link>
+        <Link className="btn btn-warning" to="/allbooks">Search Books</Link>
+        <Link className="btn btn-warning" to="/notes">My Notes</Link>
         </header>
         <div align="center">
       <img src="https://i.ibb.co/DwbJDYB/logo-size.jpg" alt= "header" width="200px"></img>

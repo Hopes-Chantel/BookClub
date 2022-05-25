@@ -7,7 +7,7 @@ const { Dislike } = require("../../models/Dislike");
 router.post("/getLikes", (req, res) => {
 
     let variable = { bookId: req.body.bookId, userId: req.body.userId }
-  
+
 
     Like.find(variable)
         .exec((err, likes) => {

@@ -27,10 +27,6 @@ console.log(bookId)
       <CardBody>
         <h3>{title}</h3>
         <p>{authors}</p>
-        {/* <Card.Content extra textAlign={"center"}>
-                <Icon name={"heart"} size="large" color={liked} onClick={clickHandler} />
-                Add To Favorites
-            </Card.Content> */}
         <Button onClick={toggle}>Book Details</Button>
         <List.Item
         actions={[<LikeDislikes bookId={props.info.id} userId={localStorage.getItem('userId')} />]} />
