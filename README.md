@@ -19,11 +19,11 @@
 
 ## Technologies used
 
-## -React
-## -MongoDB
-## -Express
-## -Node.js
-## -GoogleBooks API
-## -JavaScript, HTML, CSS
-## -Heroku
-## -GIT
+### -React
+### -MongoDB
+### -Express
+### -Node.js
+### -GoogleBooks API
+### -JavaScript, HTML, CSS
+### -Heroku
+### -GIT
