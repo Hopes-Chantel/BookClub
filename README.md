@@ -6,10 +6,15 @@
 
 ## Screenshots
 
+### Log in page
 ##### ![log in page ](https://i.ibb.co/h2nRYN4/Screen-Shot-2022-05-25-at-1-02-14-PM.png)
+### Sign up page
 ##### ![Sign up Page](https://i.ibb.co/KVpXXqG/Screen-Shot-2022-05-25-at-1-02-25-PM.png)
+### Main search Page
 ##### ![Main Search Page ](https://i.ibb.co/jZcSvMV/Screen-Shot-2022-05-25-at-1-02-37-PM.png)
-##### ![Book Feed ](https://i.ibb.co/dfYG4C7/Screen-Shot-2022-05-25-at-1-03-22-PM.png)
+### Book Feed
+##### ![Book Feed ](https://i.ibb.co/dfYG4C7/Screen-Shot-2022-05-25-at-1-03-22-PM.png)\
+### Book Details
 ##### ![Book Details ](https://i.ibb.co/MNb8fsx/Screen-Shot-2022-05-25-at-1-04-17-PM.png)
 
 ## Technologies used
