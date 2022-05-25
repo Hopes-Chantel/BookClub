@@ -10,11 +10,7 @@ export default function Header({ user, handleLogout }) {
     <header align="left">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"></link>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"></link>
-    <a className="btn btn-warning" href="/login" >login</a>    
-    <a className="btn btn-warning" href="/signup">signup</a>
-    <a className="btn btn-warning" href="/favorites">My Favorites</a>
-
-<Link className="waves-effect waves-light btn" to="" onClick={handleLogout}>
+<Link className="btn btn-warning" to="" onClick={handleLogout}>
           Logout
         </Link>
         </header>

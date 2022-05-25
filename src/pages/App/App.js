@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 import { Route, Routes, Navigate } from 'react-router-dom';
 import './App.css';
-import Header from '../../components/Header/Header';
 import SignupPage from '../SignupPage/SignupPage';
 import LoginPage from '../LoginPage/LoginPage';
 import userService from '../../utils/userService';
@@ -30,9 +29,8 @@ function App() {
       <Routes>
           <Route path="/allbooks" element={<Books/>} 
            />
-          <Route path="/"  element={<Header user={user} handleLogout={handleLogout} />}
-           />
-          <Route path="/login" element={<LoginPage handleSignUpOrLogin={handleSignUpOrLogin}/>} 
+         
+          <Route path="/" element={<LoginPage handleSignUpOrLogin={handleSignUpOrLogin}/>} 
            />
           <Route path="/signup" element={<SignupPage handleSignUpOrLogin={handleSignUpOrLogin} />} 
            />

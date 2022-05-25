@@ -1,4 +1,4 @@
-import react, {useState} from 'react'
+import {useState} from 'react'
 
 import ProfileBio from "../../components/ProfileBio/ProfileBio";
 

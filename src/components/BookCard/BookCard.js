@@ -1,6 +1,5 @@
 import React, { useState} from 'react';
 import {Card, CardImg, CardBody, Button, Modal, } from 'reactstrap';
-import {Icon, Image} from "semantic-ui-react";
 import LikeDislikes from "../LikeDislike/LikeDislike";
 import {List} from 'antd';
 
@@ -11,7 +10,7 @@ const BookCard = (props) => {
   const bookRating = volumeInfo.averageRating
   const  bookId  = props.info.id;
   const {title, authors, description, pageCount, previewLink } = props.info.volumeInfo;
-  const thumbNail = volumeInfo.hasOwnProperty('imageLinks') == false ? "https://vignette.wikia.nocookie.net/pandorahearts/images/a/ad/Not_available.jpg/revision/latest?cb=20141028171337" : volumeInfo.imageLinks.thumbnail;
+  const thumbNail = volumeInfo.hasOwnProperty('imageLinks') === false ? "https://vignette.wikia.nocookie.net/pandorahearts/images/a/ad/Not_available.jpg/revision/latest?cb=20141028171337" : volumeInfo.imageLinks.thumbnail;
   
   const [modal, setModal] = useState(false);
   
