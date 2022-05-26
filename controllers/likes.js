@@ -1,4 +1,4 @@
-const Post = require('../models/post');
+const Likes = require('../models/Like');
 
 module.exports = {
     create,
