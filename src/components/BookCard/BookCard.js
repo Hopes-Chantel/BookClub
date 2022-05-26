@@ -17,17 +17,17 @@ const BookCard = (props) => {
   const toggle = () => setModal(!modal);
 console.log(bookId)
   return (
-    <Card style={{ width: '233px' }} className='m-auto '>
+    <Card style={{width: '250px', backgroundColor:"rgb(255, 212, 60)", borderColor: "black"}} className='m-auto '>
       <CardImg
         top
-        style={{ width: '100%', height: '233px' }}
+        style={{ width: '100%', height: '250px', alignSelf:"center" }}
         src={thumbNail}
         alt={title}
       />
       <CardBody>
         <h3>{title}</h3>
         <p>{authors}</p>
-        <Button onClick={toggle}>Book Details</Button>
+        <button className="details-button"onClick={toggle}>Book Details</button>
         <List.Item
         actions={[<LikeDislikes bookId={props.info.id} userId={localStorage.getItem('userId')} />]} />
       </CardBody>

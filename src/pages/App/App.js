@@ -25,15 +25,13 @@ function App() {
 			setNotes(savedNotes);
 		}
 	}, []);
-  
+
   useEffect(() => {
     localStorage.setItem('react-notes-app-data',
      JSON.stringify(notes))
   }, [notes]);
   // save our notes to local storage
   // whenever notes get updated this function will be triggered
-
-
 
 
 
