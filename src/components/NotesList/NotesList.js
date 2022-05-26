@@ -1,7 +1,7 @@
 import Note from '../Note/Note';
 import AddNote from '../AddNote/AddNote'
 import Header from '../Header/Header'
-import {Link } from 'react-router-dom';
+
 
 
 
