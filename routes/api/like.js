@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
-const { Like } = require("../../models/Like");
-const { Dislike } = require("../../models/Dislike");
+// const { Like } = require("../../models/Like");
+// const { Dislike } = require("../../models/dislike");
 
 
 router.post("/getLikes", (req, res) => {
@@ -99,14 +99,6 @@ router.post("/upDisLike", (req, res) => {
 
 
 })
-
-
-
-
-
-
-
-
 
 
 
