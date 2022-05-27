@@ -13,9 +13,11 @@
 ### Main search Page
 ##### ![Main Search Page ](https://i.ibb.co/jZcSvMV/Screen-Shot-2022-05-25-at-1-02-37-PM.png)
 ### Book Feed
-##### ![Book Feed ](https://i.ibb.co/dfYG4C7/Screen-Shot-2022-05-25-at-1-03-22-PM.png)\
+##### ![Book Feed ](https://i.ibb.co/3srBbq2/Screen-Shot-2022-05-27-at-12-11-19-PM.png
 ### Book Details
-##### ![Book Details ](https://i.ibb.co/MNb8fsx/Screen-Shot-2022-05-25-at-1-04-17-PM.png)
+##### ![Book Details ](https://i.ibb.co/GCVWM2M/Screen-Shot-2022-05-27-at-12-11-35-PM.png)
+### Book Notes
+##### ![Book Notes ](https://i.ibb.co/vqSNr4c/Screen-Shot-2022-05-26-at-1-08-50-PM.png)
 
 ## Technologies used
 
@@ -27,3 +29,14 @@
 #### -JavaScript, HTML, CSS
 #### -Heroku
 #### -GIT
+
+## Deployed Link: https://club22.herokuapp.com/
+
+## Trello planning: https://trello.com/b/5RtaXAoR/club22
+
+
+## Next steps:
+
+### I would like for a user to be able to favorite and have a library of books they would want to read.
+### I would like the user to be able to be suggested books based on those they have liked before. 
+### I would like a user to be able to "friend" other users and be able to look through eachothers book libraries. 
