@@ -13,11 +13,11 @@
 ### Main search Page
 ##### ![Main Search Page ](https://i.ibb.co/jZcSvMV/Screen-Shot-2022-05-25-at-1-02-37-PM.png)
 ### Book Feed
-##### ![Book Feed ](https://i.ibb.co/3srBbq2/Screen-Shot-2022-05-27-at-12-11-19-PM.png)
+##### ![Book Feed ](https://i.ibb.co/LNSyH24/Screen-Shot-2022-05-27-at-12-11-19-PM.png)
 ### Book Details
-##### ![Book Details ](https://i.ibb.co/GCVWM2M/Screen-Shot-2022-05-27-at-12-11-35-PM.png)
+##### ![Book Details ](https://i.ibb.co/wwsWFqh/Screen-Shot-2022-05-27-at-12-11-35-PM.png)
 ### Book Notes
-##### ![Book Notes ](https://i.ibb.co/vqSNr4c/Screen-Shot-2022-05-26-at-1-08-50-PM.png)
+##### ![Book Notes ](https://i.ibb.co/dgYf511/Screen-Shot-2022-05-26-at-1-08-50-PM.png)
 
 ## Technologies used
 
