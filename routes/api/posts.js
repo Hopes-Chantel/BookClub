@@ -2,7 +2,6 @@ const express = require('express');
 const router = express.Router();
 const postsCtrl = require('../../controllers/posts');
 const multer  = require('multer');
-const { RefForward } = require('@fluentui/react-component-ref');
 const upload = multer(); // <- handles multipart/formdata requests(photos)
 // /*---------- Public Routes ----------*/
 router.post('/', isLoggedIn, upload.single('photo'), postsCtrl.create);
