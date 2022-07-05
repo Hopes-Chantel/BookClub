@@ -49,7 +49,7 @@ console.log(bookId)
           <div className='d-flex justify-content-between ml-3'>
             <img src={thumbNail} alt={title} style={{ height: '233px' }} />
             <div>
-              <p>Pages: {pageCount}</p>
+              <p>Page count: {pageCount}</p>
               <p>Author(s) : {authors}</p>
               <p> Rating: {bookRating}</p>
               <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
