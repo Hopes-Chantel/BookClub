@@ -27,7 +27,7 @@ console.log(bookId)
       <CardBody>
         <h3>{title}</h3>
         <p>{authors}</p>
-        <button className="details-button"onClick={toggle}>Book Details</button>
+        <button className="details-button"onClick={toggle}>Book Info</button>
         <List.Item
         actions={[<LikeDislikes bookId={props.info.id} userId={localStorage.getItem('userId')} />]} />
       </CardBody>
