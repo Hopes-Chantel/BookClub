@@ -14,7 +14,7 @@ export default function Header({ user, handleLogout }) {
           Logout
         </Link>
         <Link className="btn btn-warning" to="/allbooks">Search Books</Link>
-        <Link className="btn btn-warning" to="/notes">My Notes</Link>
+        <Link className="btn btn-warning" to="/notes">My Book Notes</Link>
         </header>
         <div align="center">
       <img src="https://i.ibb.co/DwbJDYB/logo-size.jpg" alt= "header" width="200px"></img>
