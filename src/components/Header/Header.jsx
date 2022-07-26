@@ -13,7 +13,7 @@ export default function Header({ user, handleLogout }) {
 <Link className="btn btn-warning" to="" onClick={handleLogout}>
           Logout
         </Link>
-        <Link className="btn btn-warning" to="/allbooks">Search</Link>
+        <Link className="btn btn-warning" to="/allbooks">Search Books</Link>
         <Link className="btn btn-warning" to="/notes">My Book Notes</Link>
         </header>
         <div align="center">
